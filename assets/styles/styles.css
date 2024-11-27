@@ -1,0 +1,149 @@
+/* Variables */
+:root {
+    --main-bg-color: #f4f4f9;
+    --section-bg-color: #ffffff;
+    --border-color: #d1c4e9;
+    --text-color: #333333;
+    --accent-color: #6E44AD;
+    --accent-hover-color: #552D8A;
+  }
+
+  /* Reset básico */
+body, h1, h2, p, ul, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    padding: 20px;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--section-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    color: var(--accent-color);
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  /* Nueva sección con dos columnas */
+#profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 2px solid var(--border-color);
+  }
+
+
+  .left {
+    text-align: center;
+  }
+  
+  .left p {
+    margin-bottom: 10px;
+  }
+  
+  .right h2 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+  }
+  
+  .right .personal-info {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .right .personal-info li {
+    margin-bottom: 5px;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--section-bg-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: var(--accent-hover-color);
+  }
+  
+  /* Skills y otras secciones */
+  section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 2px solid var(--border-color);
+  }
+  
+  section:last-of-type {
+    border-bottom: none;
+  }
+  
+  h2 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+  }
+  
+  p, ul {
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .two-columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .two-columns > div {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  /* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: var(--accent-color);
+  }

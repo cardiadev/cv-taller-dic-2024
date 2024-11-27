@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV Digital</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <main>
+            <!-- Sección de perfil -->
+    <section id="profile" class="two-columns">
+        <div class="left">
+          <img src="https://avatars.githubusercontent.com/u/5009452?v=4" alt="Foto de perfil" class="profile-picture">
+          <h1>Mi Nombre</h1>
+          <p>Desarrollador Web | Innovador Tecnológico</p>
+          <button class="btn" onclick="window.open('assets/pdf/cv-template.pdf', '_blank')">Descargar CV</button>
+        </div>
+        <div class="right">
+          <h2>Sobre mí</h2>
+          <ul class="personal-info">
+            <li><strong>Edad: </strong>20 años</li>
+            <li><strong>Ubicación: </strong>Guadalajara, Jalisco</li>
+            <li><strong>Email: </strong><a href="mailto:email@email.com">email@email.com</a></li>
+            <li><strong>Nacionalidad: </strong>Mexicana</li>
+            <li><strong>Estudio: </strong>Universidad de Guadalajara | UDG</li>
+            <li><strong>Grado: </strong>Ingeniería en Comunicación Multimedia</li>
+            <li><strong>Intereses: </strong>Tecnología, Innovación, Desarrollo Web</li>
+          </ul>
+        </div>
+    </section>
+
+        <!-- Sección de Habilidades -->
+        <section id="skills">
+            <div class="skills-header">
+              <h2>Habilidades</h2>
+            </div>
+            <div class="two-columns">
+              <div>
+                <h3>Hard Skills</h3>
+                <ul>
+                  <li>Desarrollo Frontend (HTML, CSS, JavaScript)</li>
+                  <li>Desarrollo Backend (Node.js, MongoDB)</li>
+                  <li>Diseño UI/UX</li>
+                </ul>
+                <h3>Soft Skills</h3>
+                <ul>
+                  <li>Comunicación efectiva</li>
+                  <li>Trabajo en equipo</li>
+                  <li>Gestión del tiempo</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Language Skills</h3>
+                <ul>
+                  <li>Español: Nativo</li>
+                  <li>Inglés: Avanzado (C1)</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+              <!-- Sección de Formación -->
+    <section id="education-experience">
+        <h2 class="section-header">Formación</h2>
+        <div class="two-columns">
+          <div>
+            <h3>Educación</h3>
+            <ul>
+              <li><strong>2020 - 2024:</strong> Ingeniería en Sistemas, UDG</li>
+              <li><strong>2017 - 2020:</strong> Bachillerato Tecnológico, CETI</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Experiencia</h3>
+            <ul>
+              <li><strong>2022 - 2024:</strong> Desarrollador Web, Empresa XYZ<br>
+                <small>Creación de aplicaciones innovadoras con tecnologías modernas.</small>
+              </li>
+              <li><strong>2020 - 2022:</strong> Freelancer<br>
+                <small>Proyectos de desarrollo web para pequeñas empresas.</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+        <p>© <span id="year"></span> Mi CV Digital</p>
+        <p>Hora actual: <span id="time"></span></p>
+    
+      </footer>
+
+</body>
+<script src="./assets/scripts/script.js"></script>
+</html>
